@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
-PUBLIC_PREFIX = "https://philiprai.github.io/SS-OTA/"
+PUBLIC_PREFIX = "https://ota.greenier.dk/"
 
 
 def fail(message: str) -> None:
@@ -32,7 +32,7 @@ if manifest["target"] != "esp32s3":
 if not manifest["url"].startswith(PUBLIC_PREFIX):
     fail("firmware URL is outside the SmartStart Pages origin")
 
-url_path = urlparse(manifest["url"]).path.removeprefix("/SS-OTA/")
+url_path = urlparse(manifest["url"]).path.removeprefix("/")
 firmware = (ROOT / url_path).resolve()
 if ROOT not in firmware.parents or not firmware.is_file():
     fail("firmware path is missing or unsafe")

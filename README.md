@@ -4,7 +4,7 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 
 ## Offentlige adresser
 
-- Manifest: `https://philiprai.github.io/SS-OTA/manifest.json`
+- Manifest: `https://ota.greenier.dk/manifest.json`
 - Firmware: adressen i manifestets `url`-felt
 
 `image_sha256` er ESP-IDF-imagehashen, som firmwaren kontrollerer efter download. `file_sha256` kontrollerer hele den downloadede fil. De to værdier er med vilje forskellige.
@@ -14,7 +14,7 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 1. Byg og test firmwaren på en fysisk enhed.
 2. Læg `.bin`-filen i en ny versionsmappe under `firmware/`.
 3. Opdater alle felter i `manifest.json`.
-4. Push til `main`. Workflowet validerer fil, størrelse og hashes og publicerer derefter GitHub Pages.
+4. Push til `main`. Workflowet validerer fil, størrelse og hashes; GitHub Pages publicerer derefter indholdet.
 
 Eksisterende versionsfiler må ikke overskrives. Opret altid en ny versionsmappe, så aktive enheder aldrig får en anden fil fra den samme URL.
 

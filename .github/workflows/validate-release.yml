@@ -1,0 +1,20 @@
+name: Validate SmartStart OTA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release repository
+        uses: actions/checkout@v4
+      - name: Validate manifest and firmware
+        run: python3 tools/verify_release.py
