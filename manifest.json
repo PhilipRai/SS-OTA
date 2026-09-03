@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 401,
-  "version": "0.4.1-signed-ota-client",
-  "url": "https://ota.greenier.dk/firmware/0.4.1-signed-ota-client/smartstart_firmware.bin",
-  "size": 1104160,
-  "image_sha256": "282ad99d48751f4e3f2926159d73d52b59f43ff48d17825d51aed3f8adcce7d7",
-  "file_sha256": "dc75696db13b06eebd485dd5403a03dc5f9300863ddf64000fe0127422ab57c2",
+  "sequence": 403,
+  "version": "0.4.3-ota-proof",
+  "url": "https://ota.greenier.dk/firmware/0.4.3-ota-proof/smartstart_firmware.bin",
+  "size": 1104112,
+  "image_sha256": "ed690eb2120b368be72313d4f6c2da95e40b657a50a118d92a370707c287b0c5",
+  "file_sha256": "e20dd4e24e47f84d756c87c6e66da662f7957b1b80a61476f13db68b41f8d26f",
   "signed_manifest": true,
-  "signature": "MEMCIFL7cRZwpd17WU7k2WKEoNrtY3Jmp5xrZkTvStbGOcMDAh83LEBzxt/ew6tL0E/rAbenfzpZjcOk03OTc9RxB+Fj",
-  "published_at": "2026-09-03T08:30:00Z",
-  "notes": "Signeret manifestklient, automatisk Wi-Fi-kontrol og tydelige OTA LED-signaler."
+  "signature": "MEQCIFSvskypNK8nU/yi1ZtTGCllR7uf+T4dlSne1hRE2bkBAiBLgGsyqmXRcWMOZwnQ98rDXUX+z64gOU6CiW0YZTsuPQ==",
+  "published_at": "2026-09-03T08:45:00Z",
+  "notes": "Første end-to-end OTA-bevis. Tre opstartsblink identificerer den trådløst installerede version."
 }
