@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 407,
-  "version": "0.4.7-secure-auth",
-  "url": "https://ota.greenier.dk/firmware/0.4.7-secure-auth/smartstart_firmware.bin",
-  "size": 1104384,
-  "image_sha256": "37abc547fedc44c3323f3959e54a2798864aa82e4225d610c4079e75e686cccc",
-  "file_sha256": "dbbfd9ff967034069f437dcd6cb3684b9ef5ba5de23fd143a3fd8edab3bec3b1",
+  "sequence": 408,
+  "version": "0.4.8-individual-auth",
+  "url": "https://ota.greenier.dk/firmware/0.4.8-individual-auth/smartstart_firmware.bin",
+  "size": 1105696,
+  "image_sha256": "76317253b57ea3b208404a47d48f3255a30a6833421173182f15ee0eacd581f8",
+  "file_sha256": "da2f2418c329c0a75abb7630a744bb2cddba83717a7e3e36b34b83bb3f8fc507",
   "signed_manifest": true,
-  "signature": "MEUCIQDPwON1HgiG02nNcZvgpE5DbVnUA9gYDHk6WSHK0M1jywIgQc1nV8BGKsoBbZVII6I2830IbbL5j5PeRLXW05FoIxY=",
-  "published_at": "2026-09-03T12:15:00Z",
-  "notes": "Fjerner den delte MVP-hemmelighed. BLE-adgang kræver nu en ECDSA P-256-signatur over challenge, maskine og formål."
+  "signature": "MEYCIQCm5SFIphJRIRgXbe2IxggZbURO5rMGjIe9wKSeqOv5FgIhAID13a8ZCD7ESvevn/Rvqo4HDyKUPZrHfDXv/ERksEJ4",
+  "published_at": "2026-09-03T09:23:04Z",
+  "notes": "Hver bruger har nu sin egen nøgle og et rootsigneret offline-adgangsbevis. En kompromitteret brugernøgle giver ikke adgang som andre brugere."
 }
