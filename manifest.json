@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 405,
-  "version": "0.4.5-ota-complete",
-  "url": "https://ota.greenier.dk/firmware/0.4.5-ota-complete/smartstart_firmware.bin",
-  "size": 1104144,
-  "image_sha256": "be06d6e96b7e4b928695a4d98f398ae11851cd05a1a2d5ef97fffa19d0122376",
-  "file_sha256": "ccc6ce592cadfcc704fb5ef3cd0b3d5f035bc78a244c3e835d0240f27fd9066d",
+  "sequence": 406,
+  "version": "0.4.6-ota-final",
+  "url": "https://ota.greenier.dk/firmware/0.4.6-ota-final/smartstart_firmware.bin",
+  "size": 1104128,
+  "image_sha256": "652b52774e48967ebc063f0e1d87465fd6120d0db112dbff89e68e4ed8c8bc08",
+  "file_sha256": "4e62c3e221ad48cabc226897d2b68a40e386c7ea82687fef6cee3d88d435f883",
   "signed_manifest": true,
-  "signature": "MEYCIQDpqAwqlQLqFQcbje6NZ/Fs653GOS+1J+AsSvze7rwVrwIhAMdkVNl5aN0ZBsvrjV1ZXsIaryLzEhoruKxstnFOAy7M",
-  "published_at": "2026-09-03T11:15:00Z",
-  "notes": "Komplet signeret OTA-test. Fem opstartsblink identificerer den trådløst installerede version; samme image stages kun én gang."
+  "signature": "MEQCIACpqgyZukstDhweQyEN0JTobC1owM19iVJvDYilDqb7AiA/c8W97tcLD1nERgh253UONE/GcfaKku9nmcRlgTEJhw==",
+  "published_at": "2026-09-03T11:30:00Z",
+  "notes": "Endelig OTA-test med ens firmwaremetadata overalt. Seks opstartsblink identificerer version 0.4.6."
 }
