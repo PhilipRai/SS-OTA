@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "product": "smartstart",
+  "target": "esp32s3",
+  "hardware": "seeed-xiao-esp32s3",
+  "channel": "mvp",
+  "version": "0.4.0-dual-courier-ota",
+  "url": "https://philiprai.github.io/SS-OTA/firmware/0.4.0-dual-courier-ota/smartstart_firmware.bin",
+  "size": 1095632,
+  "image_sha256": "b34630e4b95397af270a0c3e93cc77e402866cc4cf6b4a483444ae3396923c82",
+  "file_sha256": "9b6570865c6e4560b5f9f4fe9474248e9c33ade8b942bf1f8dae5ffa8450c97e",
+  "signed_manifest": false,
+  "published_at": "2026-09-03T00:00:00Z",
+  "notes": "Første Wi-Fi OTA-testudgivelse. Kræver eksplicit administratoraktivering."
+}
