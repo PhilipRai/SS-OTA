@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 408,
-  "version": "0.4.8-individual-auth",
-  "url": "https://ota.greenier.dk/firmware/0.4.8-individual-auth/smartstart_firmware.bin",
-  "size": 1105696,
-  "image_sha256": "76317253b57ea3b208404a47d48f3255a30a6833421173182f15ee0eacd581f8",
-  "file_sha256": "da2f2418c329c0a75abb7630a744bb2cddba83717a7e3e36b34b83bb3f8fc507",
+  "sequence": 409,
+  "version": "0.4.9-service-update",
+  "url": "https://ota.greenier.dk/firmware/0.4.9-service-update/smartstart_firmware.bin",
+  "size": 1107200,
+  "image_sha256": "3e9a1d9454ecdfc7574327603992f2bb49574653a9a76b6738bf2b35d3867a0c",
+  "file_sha256": "6481d6586aba75af4ee780a8842e817ff23a86aee3a7b55aed57f0a66b45f47e",
   "signed_manifest": true,
-  "signature": "MEYCIQCm5SFIphJRIRgXbe2IxggZbURO5rMGjIe9wKSeqOv5FgIhAID13a8ZCD7ESvevn/Rvqo4HDyKUPZrHfDXv/ERksEJ4",
-  "published_at": "2026-09-03T09:23:04Z",
-  "notes": "Hver bruger har nu sin egen nøgle og et rootsigneret offline-adgangsbevis. En kompromitteret brugernøgle giver ikke adgang som andre brugere."
+  "signature": "MEQCIA64vVQtfVTz9zwxx6yJ83Bkgh6kYtsLIRRF02aX0N6HAiAQ6YLkhYpNXDedNjO512Ca4EiE3qMPXJaW+gxpUYQi5A==",
+  "published_at": "2026-09-03T09:43:38Z",
+  "notes": "Mac-serviceværktøj med firmware via BLE eller USB samt tvunget, fortsat signaturkontrolleret Wi-Fi-opdateringstjek."
 }
