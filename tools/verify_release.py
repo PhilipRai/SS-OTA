@@ -3,6 +3,9 @@
 
 import hashlib
 import json
+import base64
+import subprocess
+import tempfile
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -18,8 +21,9 @@ def fail(message: str) -> None:
 
 manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
 required = {
-    "schema", "product", "target", "hardware", "version", "url", "size",
-    "image_sha256", "file_sha256", "signed_manifest", "published_at",
+    "schema", "product", "target", "hardware", "channel", "sequence",
+    "version", "url", "size", "image_sha256", "file_sha256",
+    "signed_manifest", "signature", "published_at",
 }
 missing = sorted(required - manifest.keys())
 if missing:
@@ -46,5 +50,32 @@ if len(payload) < 32 or payload[-32:].hex() != manifest["image_sha256"]:
     fail("ESP image validation hash does not match manifest")
 if firmware.parent.name != manifest["version"]:
     fail("version and firmware directory do not match")
+if not manifest["signed_manifest"] or not manifest["signature"]:
+    fail("manifest must be digitally signed")
 
-print(f"Validated SmartStart {manifest['version']} ({len(payload)} bytes)")
+canonical = (
+    "SMARTSTART-OTA-V1\n"
+    f"{manifest['schema']}\n{manifest['product']}\n{manifest['target']}\n"
+    f"{manifest['hardware']}\n{manifest['channel']}\n{manifest['sequence']}\n"
+    f"{manifest['version']}\n{manifest['url']}\n{manifest['size']}\n"
+    f"{manifest['image_sha256']}\n{manifest['file_sha256']}\n"
+).encode("utf-8")
+try:
+    signature = base64.b64decode(manifest["signature"], validate=True)
+except ValueError as error:
+    fail(f"invalid base64 signature: {error}")
+with tempfile.NamedTemporaryFile() as signature_file:
+    signature_file.write(signature)
+    signature_file.flush()
+    verified = subprocess.run(
+        ["openssl", "dgst", "-sha256", "-verify",
+         str(ROOT / "keys/ota-signing-public.pem"),
+         "-signature", signature_file.name],
+        input=canonical,
+        capture_output=True,
+        check=False,
+    )
+if verified.returncode != 0:
+    fail("ECDSA manifest signature is invalid")
+
+print(f"Validated signed SmartStart {manifest['version']} ({len(payload)} bytes)")

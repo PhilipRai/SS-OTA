@@ -4,12 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "version": "0.4.0-dual-courier-ota",
-  "url": "https://ota.greenier.dk/firmware/0.4.0-dual-courier-ota/smartstart_firmware.bin",
-  "size": 1095632,
-  "image_sha256": "b34630e4b95397af270a0c3e93cc77e402866cc4cf6b4a483444ae3396923c82",
-  "file_sha256": "9b6570865c6e4560b5f9f4fe9474248e9c33ade8b942bf1f8dae5ffa8450c97e",
-  "signed_manifest": false,
-  "published_at": "2026-09-03T00:00:00Z",
-  "notes": "Første Wi-Fi OTA-testudgivelse. Kræver eksplicit administratoraktivering."
+  "sequence": 401,
+  "version": "0.4.1-signed-ota-client",
+  "url": "https://ota.greenier.dk/firmware/0.4.1-signed-ota-client/smartstart_firmware.bin",
+  "size": 1104160,
+  "image_sha256": "282ad99d48751f4e3f2926159d73d52b59f43ff48d17825d51aed3f8adcce7d7",
+  "file_sha256": "dc75696db13b06eebd485dd5403a03dc5f9300863ddf64000fe0127422ab57c2",
+  "signed_manifest": true,
+  "signature": "MEMCIFL7cRZwpd17WU7k2WKEoNrtY3Jmp5xrZkTvStbGOcMDAh83LEBzxt/ew6tL0E/rAbenfzpZjcOk03OTc9RxB+Fj",
+  "published_at": "2026-09-03T08:30:00Z",
+  "notes": "Signeret manifestklient, automatisk Wi-Fi-kontrol og tydelige OTA LED-signaler."
 }
