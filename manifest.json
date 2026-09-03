@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 500,
-  "version": "0.5.0-rssi",
-  "url": "https://ota.greenier.dk/firmware/0.5.0-rssi/smartstart_firmware.bin",
-  "size": 1107536,
-  "image_sha256": "da285cd10894248d3e51a80a9f0fdda2ba39e0d0e19209bf92bd0603e3460f4d",
-  "file_sha256": "a461f68cd60b985c29019f099e8b0fb1ccf44813736da3a9a60a6bdd3d7b56fb",
+  "sequence": 501,
+  "version": "0.5.1-remote-config",
+  "url": "https://ota.greenier.dk/firmware/0.5.1-remote-config/smartstart_firmware.bin",
+  "size": 1109952,
+  "image_sha256": "1be5bab0252f9602888d834139e6941589298e8b8177c611cda80b49b9b264bd",
+  "file_sha256": "c34e403e31fa0e8d78287648a2599655dfee3a835f1f30500b47f177fd36bcab",
   "signed_manifest": true,
-  "signature": "MEQCIFR2AfwFiOIS3x+w8JMLuTCVXed0rHFMKB3JOtZtl7/tAiBfSF4PnGno4IAyh73FHCxMENYW9sK8gr0g8HVm4CC0iA==",
-  "published_at": "2026-09-03T22:05:47Z",
-  "notes": "Stabiliseret nærhedsmåling med filtreret RSSI, mere realistiske standardgrænser og sikker førstegangskalibrering for installatører."
+  "signature": "MEUCIQDL6xQXcIMy0w/O+j/zDGnifJAHgENaw9XlkfE5tBOpsAIgETMoxKtNy3fuWLUJQGs6+XrZJketgbWMKUFNWyO7WKQ=",
+  "published_at": "2026-09-03T22:25:32Z",
+  "notes": "Sikker fjernjustering af RSSI-grænser via Base44 med chip-ID-binding, ECDSA-signatur og beskyttelse mod genafspilning."
 }
