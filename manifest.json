@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 409,
-  "version": "0.4.9-service-update",
-  "url": "https://ota.greenier.dk/firmware/0.4.9-service-update/smartstart_firmware.bin",
-  "size": 1107200,
-  "image_sha256": "3e9a1d9454ecdfc7574327603992f2bb49574653a9a76b6738bf2b35d3867a0c",
-  "file_sha256": "6481d6586aba75af4ee780a8842e817ff23a86aee3a7b55aed57f0a66b45f47e",
+  "sequence": 500,
+  "version": "0.5.0-rssi",
+  "url": "https://ota.greenier.dk/firmware/0.5.0-rssi/smartstart_firmware.bin",
+  "size": 1107536,
+  "image_sha256": "da285cd10894248d3e51a80a9f0fdda2ba39e0d0e19209bf92bd0603e3460f4d",
+  "file_sha256": "a461f68cd60b985c29019f099e8b0fb1ccf44813736da3a9a60a6bdd3d7b56fb",
   "signed_manifest": true,
-  "signature": "MEQCIA64vVQtfVTz9zwxx6yJ83Bkgh6kYtsLIRRF02aX0N6HAiAQ6YLkhYpNXDedNjO512Ca4EiE3qMPXJaW+gxpUYQi5A==",
-  "published_at": "2026-09-03T09:43:38Z",
-  "notes": "Mac-serviceværktøj med firmware via BLE eller USB samt tvunget, fortsat signaturkontrolleret Wi-Fi-opdateringstjek."
+  "signature": "MEQCIFR2AfwFiOIS3x+w8JMLuTCVXed0rHFMKB3JOtZtl7/tAiBfSF4PnGno4IAyh73FHCxMENYW9sK8gr0g8HVm4CC0iA==",
+  "published_at": "2026-09-03T22:05:47Z",
+  "notes": "Stabiliseret nærhedsmåling med filtreret RSSI, mere realistiske standardgrænser og sikker førstegangskalibrering for installatører."
 }
