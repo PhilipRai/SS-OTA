@@ -18,3 +18,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate manifest and firmware
         run: python3 tools/verify_release.py
+      - name: Validate diagnostic manifest and firmware
+        run: python3 tools/verify_release.py diagnostic/manifest.json

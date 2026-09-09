@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "product": "smartstart",
+  "target": "esp32s3",
+  "hardware": "seeed-xiao-esp32s3",
+  "channel": "diagnostic",
+  "sequence": 611,
+  "version": "0.6.11-wifi-event-fix",
+  "url": "https://ota.greenier.dk/diagnostic/firmware/0.6.11-wifi-event-fix/smartstart_firmware.bin",
+  "size": 1114480,
+  "image_sha256": "fa379089dea5fc8c0ef8f8863511bfa75c44ce301a927bddd2a604f3cb2f3a2e",
+  "file_sha256": "3226e5023491df6e0d01d877ce11fce0cb3a82d399f64b9f10fda2dfea80e6dc",
+  "signed_manifest": true,
+  "signature": "MEUCIBa0COzqzKQblYO25gQ1KKA0nHgchMUv71pxpduzQl6wAiEA39Kgd6vKgt/QSVu6xiQNm3f4R0cVeCUYlvwO0KAiHRQ=",
+  "published_at": "2026-09-09T22:20:00Z",
+  "notes": "Diagnosekanal: fysisk testet rettelse af Wi-Fi-systemhændelsens stack overflow og genstartsløkke. Ikke frigivet til automatisk OTA."
+}

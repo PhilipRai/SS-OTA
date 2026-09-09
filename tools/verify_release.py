@@ -4,6 +4,7 @@
 import hashlib
 import json
 import base64
+import argparse
 import subprocess
 import tempfile
 from pathlib import Path
@@ -11,7 +12,6 @@ from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "manifest.json"
 PUBLIC_PREFIX = "https://ota.greenier.dk/"
 
 
@@ -19,7 +19,14 @@ def fail(message: str) -> None:
     raise SystemExit(f"OTA validation failed: {message}")
 
 
-manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+parser = argparse.ArgumentParser()
+parser.add_argument("manifest", type=Path, nargs="?", default=ROOT / "manifest.json")
+args = parser.parse_args()
+manifest_path = args.manifest.resolve()
+if ROOT not in manifest_path.parents or not manifest_path.is_file():
+    fail("manifest path is missing or outside the release repository")
+
+manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 required = {
     "schema", "product", "target", "hardware", "channel", "sequence",
     "version", "url", "size", "image_sha256", "file_sha256",

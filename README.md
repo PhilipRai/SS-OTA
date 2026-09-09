@@ -7,11 +7,13 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 - Offentlig version: `0.6.10-factory-wifi`
 - Sekvens: `610`
 - Den publicerede binærfil er den fysisk godkendte firmware fra 9. september 2026.
+- Diagnosekanal: `0.6.11-wifi-event-fix` (sekvens `611`), kun til SmartStart Diagnose og manuel serviceopdatering.
 
 ## Offentlige adresser
 
 - Manifest: `https://ota.greenier.dk/manifest.json`
 - Firmware: adressen i manifestets `url`-felt
+- Diagnosemanifest: `https://ota.greenier.dk/diagnostic/manifest.json`
 
 `image_sha256` er ESP-IDF-imagehashen, som firmwaren kontrollerer efter download. `file_sha256` kontrollerer hele den downloadede fil. De to værdier er med vilje forskellige. Manifestet signeres med ECDSA P-256; kun den offentlige nøgle ligger i GitHub.
 
@@ -20,7 +22,7 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 1. Byg og test firmwaren på en fysisk enhed.
 2. Læg `.bin`-filen i en ny versionsmappe under `firmware/`.
 3. Opdater alle felter i `manifest.json`, herunder det monotont stigende `sequence`.
-4. Signér manifestet lokalt: `python3 tools/sign_manifest.py ~/.smartstart-keys/ota-signing-private.pem`.
+4. Signér manifestet lokalt: `python3 tools/sign_manifest.py ~/.smartstart-keys/ota-signing-private.pem`. Et særskilt manifest kan angives som andet argument, eksempelvis `diagnostic/manifest.json`.
 5. Kør `python3 tools/verify_release.py`.
 6. Push til `main`. Workflowet validerer fil, størrelse, hashes og signatur; GitHub Pages publicerer derefter indholdet.
 

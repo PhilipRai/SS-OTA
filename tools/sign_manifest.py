@@ -10,9 +10,6 @@ import tempfile
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "manifest.json"
-
-
 def canonical(manifest: dict) -> bytes:
     return (
         "SMARTSTART-OTA-V1\n"
@@ -26,11 +23,16 @@ def canonical(manifest: dict) -> bytes:
 parser = argparse.ArgumentParser()
 parser.add_argument("private_key", type=Path,
                     help="P-256 private PEM key kept outside the repository")
+parser.add_argument("manifest", type=Path, nargs="?", default=ROOT / "manifest.json",
+                    help="manifest to sign (default: repository manifest.json)")
 args = parser.parse_args()
 if not args.private_key.is_file():
     raise SystemExit("Private signing key not found")
+manifest_path = args.manifest.resolve()
+if not manifest_path.is_file():
+    raise SystemExit(f"Manifest not found: {manifest_path}")
 
-manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 manifest["signed_manifest"] = True
 with tempfile.NamedTemporaryFile() as signature_file:
     subprocess.run(
@@ -42,6 +44,6 @@ with tempfile.NamedTemporaryFile() as signature_file:
     signature_file.seek(0)
     manifest["signature"] = base64.b64encode(signature_file.read()).decode("ascii")
 
-MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
-                    encoding="utf-8")
+manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+                         encoding="utf-8")
 print(f"Signed {manifest['version']} sequence {manifest['sequence']}")
