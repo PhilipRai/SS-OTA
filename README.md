@@ -2,6 +2,13 @@
 
 Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via GitHub Pages.
 
+## Aktuel kanalstatus
+
+- Offentlig version: `0.5.1-remote-config`
+- Sekvens: `501`
+- Firmwarekilden er nyere: `0.6.10-factory-wifi`
+- 0.6.10 er ikke offentliggjort via OTA endnu og må derfor ikke omtales som installeret via OTA.
+
 ## Offentlige adresser
 
 - Manifest: `https://ota.greenier.dk/manifest.json`
