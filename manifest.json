@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 501,
-  "version": "0.5.1-remote-config",
-  "url": "https://ota.greenier.dk/firmware/0.5.1-remote-config/smartstart_firmware.bin",
-  "size": 1109952,
-  "image_sha256": "1be5bab0252f9602888d834139e6941589298e8b8177c611cda80b49b9b264bd",
-  "file_sha256": "c34e403e31fa0e8d78287648a2599655dfee3a835f1f30500b47f177fd36bcab",
+  "sequence": 610,
+  "version": "0.6.10-factory-wifi",
+  "url": "https://ota.greenier.dk/firmware/0.6.10-factory-wifi/smartstart_firmware.bin",
+  "size": 1114272,
+  "image_sha256": "f612f3d2095c644fae314b9dcec739da9f1c850fc0db35baba5c3f183200bdf1",
+  "file_sha256": "354217a91d6a2101166d9bd791f06521c8aef6b374cf309692ceba5ffc2dc950",
   "signed_manifest": true,
-  "signature": "MEUCIQDL6xQXcIMy0w/O+j/zDGnifJAHgENaw9XlkfE5tBOpsAIgETMoxKtNy3fuWLUJQGs6+XrZJketgbWMKUFNWyO7WKQ=",
-  "published_at": "2026-09-03T22:25:32Z",
-  "notes": "Sikker fjernjustering af RSSI-grænser via Base44 med chip-ID-binding, ECDSA-signatur og beskyttelse mod genafspilning."
+  "signature": "MEUCICB61RSKONbYAcDQKP4eZnpPYz8MrJzc67Mgult+WtWTAiEAz22Fv8NRzvN43SZBHrdGy1sqoKXZ3c4VhznJkR7fwoA=",
+  "published_at": "2026-09-09T14:03:35Z",
+  "notes": "Godkendt SmartStart-servicefirmware med sikker backlog, permanent enhedsidentitet, USB-diagnose, BLE-serviceopdatering og fysisk USB-provisionering af standard-Wi-Fi."
 }

@@ -4,10 +4,9 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 
 ## Aktuel kanalstatus
 
-- Offentlig version: `0.5.1-remote-config`
-- Sekvens: `501`
-- Firmwarekilden er nyere: `0.6.10-factory-wifi`
-- 0.6.10 er ikke offentliggjort via OTA endnu og må derfor ikke omtales som installeret via OTA.
+- Offentlig version: `0.6.10-factory-wifi`
+- Sekvens: `610`
+- Den publicerede binærfil er den fysisk godkendte firmware fra 9. september 2026.
 
 ## Offentlige adresser
 
