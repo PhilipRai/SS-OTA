@@ -4,10 +4,10 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 
 ## Aktuel kanalstatus
 
-- Offentlig version: `0.6.10-factory-wifi`
-- Sekvens: `610`
-- Den publicerede binærfil er den fysisk godkendte firmware fra 9. september 2026.
-- Diagnosekanal: `0.6.11-wifi-event-fix` (sekvens `611`), kun til SmartStart Diagnose og manuel serviceopdatering.
+- Offentlig version: `0.6.12-auth-stack-fix`
+- Sekvens: `612`
+- Den publicerede binærfil er fysisk godkendt på SS-DEMO-001 den 10. september 2026.
+- Diagnosekanal: `0.6.12-auth-stack-fix` (sekvens `612`), til SmartStart Diagnose og manuel serviceopdatering.
 
 ## Offentlige adresser
 

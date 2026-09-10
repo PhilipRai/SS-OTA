@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "mvp",
-  "sequence": 610,
-  "version": "0.6.10-factory-wifi",
-  "url": "https://ota.greenier.dk/firmware/0.6.10-factory-wifi/smartstart_firmware.bin",
-  "size": 1114272,
-  "image_sha256": "f612f3d2095c644fae314b9dcec739da9f1c850fc0db35baba5c3f183200bdf1",
-  "file_sha256": "354217a91d6a2101166d9bd791f06521c8aef6b374cf309692ceba5ffc2dc950",
+  "sequence": 612,
+  "version": "0.6.12-auth-stack-fix",
+  "url": "https://ota.greenier.dk/firmware/0.6.12-auth-stack-fix/smartstart_firmware.bin",
+  "size": 1114480,
+  "image_sha256": "c03df7987e062c25d001ca975b9d9dbd99c5f590f08b6e84c80a3bd5f6b66262",
+  "file_sha256": "c0125ef3ab44e43d44785790b2be4e0e8f5459013890e4be38c73f1e832d27b4",
   "signed_manifest": true,
-  "signature": "MEUCICB61RSKONbYAcDQKP4eZnpPYz8MrJzc67Mgult+WtWTAiEAz22Fv8NRzvN43SZBHrdGy1sqoKXZ3c4VhznJkR7fwoA=",
-  "published_at": "2026-09-09T14:03:35Z",
-  "notes": "Godkendt SmartStart-servicefirmware med sikker backlog, permanent enhedsidentitet, USB-diagnose, BLE-serviceopdatering og fysisk USB-provisionering af standard-Wi-Fi."
+  "signature": "MEUCIQCiRmlZx6t9BMs/m3jV5m8LeMx0id6S9n5sBPn7GhxsVQIgJiWa9FemtY8c0gwI1y8YehSPQuejccyI58w6QiRO5NI=",
+  "published_at": "2026-09-10T07:59:23Z",
+  "notes": "Fysisk godkendt på SS-DEMO-001: stabil Wi-Fi, sikker BLE-godkendelse uden stack overflow, permanent enhedsidentitet, USB-diagnose, courier-backlog og OTA med rollback."
 }
