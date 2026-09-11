@@ -4,9 +4,9 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 
 ## Aktuel kanalstatus
 
-- Offentlig version: `0.6.12-auth-stack-fix`
-- Sekvens: `612`
-- Den publicerede binærfil er fysisk godkendt på SS-DEMO-001 den 10. september 2026.
+- Offentlig version: `0.6.21-portal-poll`
+- Sekvens: `621`
+- Den publicerede binærfil er fysisk godkendt på SS-DEMO-001 den 11. september 2026, inklusive Normal/BYPASS og portalpolling.
 - Diagnosekanal: `0.6.21-portal-poll` (sekvens `621`), til SmartStart Diagnose og manuel fysisk test. Den ændrer ikke den offentlige flådekanal.
 
 ## Offentlige adresser
