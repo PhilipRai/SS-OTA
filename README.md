@@ -7,7 +7,7 @@ Dette repository publicerer SmartStart-firmware som statiske HTTPS-filer via Git
 - Offentlig version: `0.6.12-auth-stack-fix`
 - Sekvens: `612`
 - Den publicerede binærfil er fysisk godkendt på SS-DEMO-001 den 10. september 2026.
-- Diagnosekanal: `0.6.15-config-ack` (sekvens `615`), til SmartStart Diagnose og manuel fysisk test. Den ændrer ikke den offentlige flådekanal.
+- Diagnosekanal: `0.6.16-wifi-diagnostics` (sekvens `616`), til SmartStart Diagnose og manuel fysisk test. Den ændrer ikke den offentlige flådekanal.
 
 ## Offentlige adresser
 

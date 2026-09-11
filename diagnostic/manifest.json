@@ -4,14 +4,14 @@
   "target": "esp32s3",
   "hardware": "seeed-xiao-esp32s3",
   "channel": "diagnostic",
-  "sequence": 615,
-  "version": "0.6.15-config-ack",
-  "url": "https://ota.greenier.dk/diagnostic/firmware/0.6.15-config-ack/smartstart_firmware.bin",
-  "size": 1118480,
-  "image_sha256": "b9e5e0411b45f79612775b4489380cca4d03056d8da0a3a0f776aa20b72e3f98",
-  "file_sha256": "a048899f04771cc8a3af21181f2857204dd0438ef6a21fb58daf6c57bf0d207e",
+  "sequence": 616,
+  "version": "0.6.16-wifi-diagnostics",
+  "url": "https://ota.greenier.dk/diagnostic/firmware/0.6.16-wifi-diagnostics/smartstart_firmware.bin",
+  "size": 1119024,
+  "image_sha256": "7b62223712838062451ef4e107b26577b483e4ba31e1e9cd49ea5fe183bc107f",
+  "file_sha256": "b5ed3b17c30fb9debed7372786971d6ddbc9cb879abef6a4c5063b0da63cd340",
   "signed_manifest": true,
-  "signature": "MEQCIFh5vkh6NKRnym6Q1kEQYg1T6v3vZe0JiEpjayqjgyFEAiB0HsDZEdi2BMP/LtYb5vXwxMCOB2C6Lfh4bdvpepYfkQ==",
-  "published_at": "2026-09-11T12:10:00Z",
-  "notes": "Servicekandidat med Wi-Fi, Normal/BYPASS, USB-diagnose og direkte signeret konfigurationskvittering. Kun til fysisk test; offentlig flåde-OTA forbliver 0.6.12."
+  "signature": "MEUCIB3KUh+G3Jrr4erL8F03IkbuVrpkUvl8JbQ/RnQaVtq7AiEAyzlwfpCAIAkFXLMYXGs8HLkVRXQT9nto028w+0cxJx4=",
+  "published_at": "2026-09-11T12:14:28Z",
+  "notes": "Signeret servicekandidat til fysisk test. Den offentlige flådekanal ændres ikke."
 }
